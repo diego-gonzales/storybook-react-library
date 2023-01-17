@@ -1,15 +1,19 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "module": "ES2020",                                /* Specify what module code is generated. */
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
-    "strict": true,                                      /* Enable all strict type-checking options. */
-    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
-    "jsx": "react",
-    "outDir": "dist",
+    "outDir": "lib",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": true,
+    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "moduleResolution": "Node"
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+    "module": "ESNext",                                /* Specify what module code is generated. */
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react"
   }
 }
