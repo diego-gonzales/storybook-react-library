@@ -1,15 +1,27 @@
 .square {
-  width: 150px;
-  height: 150px;
+  padding: 0.8rem 1rem;
+  background-color: transparent;
+  border: 2px solid #dcdce4;
+  cursor: pointer;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.square-light {
+.square-primary {
+  border: 2px solid #271fe0;
   background-color: var(--material-theme-sys-light-primary);
+  color: #fff;
 }
 
-.square-dark {
+.square-secondary {
+  border: 2px solid #328048;
   background-color: var(--material-theme-sys-dark-primary);
+  color: #fff;
+}
+
+.art-btn-rounded {
+  border-radius: 0.4rem;
+}
+
+.square-circle {
+  border-radius: 100%;
 }

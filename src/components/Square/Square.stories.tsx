@@ -9,12 +9,31 @@ export default {
 
 const Template: ComponentStory<typeof Square> = (args) => <Square {...args} />;
 
-export const Light = Template.bind({});
-Light.args = {
-  isLight: true
+export const Default = Template.bind({});
+Default.args = {
+  children: 'Default'
 };
 
-export const Dark = Template.bind({});
-Dark.args = {
-  isLight: false
+export const Primary = Template.bind({});
+Primary.args = {
+  children: 'Primary',
+  variant: 'primary'
+};
+
+export const Secondary = Template.bind({});
+Secondary.args = {
+  children: 'Secondary',
+  variant: 'secondary'
+};
+
+export const Rounded = Template.bind({});
+Rounded.args = {
+  children: 'Rounded',
+  shape: 'roundend'
+};
+
+export const Circle = Template.bind({});
+Circle.args = {
+  children: 'Circle',
+  shape: 'circle'
 };
