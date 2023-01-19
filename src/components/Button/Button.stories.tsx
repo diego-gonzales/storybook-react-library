@@ -13,7 +13,7 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
-  label: 'Button',
+  label: 'Button'
 };
 
 export const Secondary = Template.bind({});

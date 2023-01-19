@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import "./Square.css";
 
-interface SquareProps {
+export interface SquareProps {
   children: ReactNode;
   variant?: "primary" | "secondary";
   shape?: "circle" | "rounded";
