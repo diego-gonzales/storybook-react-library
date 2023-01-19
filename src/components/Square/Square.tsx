@@ -4,7 +4,7 @@ import "./Square.css";
 interface SquareProps {
   children: ReactNode;
   variant?: "primary" | "secondary";
-  shape?: "circle" | "roundend";
+  shape?: "circle" | "rounded";
 }
 
 export const Square = ({ children, variant, shape }: SquareProps) => {

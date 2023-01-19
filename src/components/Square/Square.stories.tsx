@@ -29,7 +29,7 @@ Secondary.args = {
 export const Rounded = Template.bind({});
 Rounded.args = {
   children: 'Rounded',
-  shape: 'roundend'
+  shape: 'rounded'
 };
 
 export const Circle = Template.bind({});

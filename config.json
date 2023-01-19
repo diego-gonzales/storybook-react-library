@@ -11,7 +11,7 @@
           "format": "css/variables"
         }
       ],
-      "buildPath": "output/"
+      "buildPath": "src/"
     }
   }
 }
