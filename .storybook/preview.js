@@ -1,3 +1,4 @@
+import '../src/css/variables.css';
 import '../src/index.css';
 
 export const parameters = {
