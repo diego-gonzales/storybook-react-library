@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import styles from "./Square.module.css";
+import "./Square.css";
 
 export interface SquareProps {
   children: ReactNode;
@@ -8,10 +8,10 @@ export interface SquareProps {
 }
 
 export const Square = ({ children, variant, shape }: SquareProps) => {
-  const squareVariant = variant ? styles[`square-${variant}`] : "";
-  const squareShape = shape ? styles[`square-${shape}`] : "";
+  const squareVariant = variant ? `square-${variant}` : "";
+  const squareShape = shape ? `square-${shape}` : "";
 
   return (
-    <div className={`${styles.square} ${squareVariant} ${squareShape}`}>{children}</div>
+    <div className={`square ${squareVariant} ${squareShape}`}>{children}</div>
   );
 };
