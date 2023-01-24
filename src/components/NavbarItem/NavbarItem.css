@@ -1,0 +1,13 @@
+.navLinkItem {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--material-theme-white);
+  text-align: right;
+  text-decoration: none;
+}
+
+.navLinkItem:not(:last-of-type) {
+  margin-right: 41px;
+}

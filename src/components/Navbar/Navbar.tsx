@@ -3,21 +3,18 @@ import "./Navbar.css";
 
 export interface NavbarProps {
   imgSrc: string;
+  title: string;
   children: ReactNode;
 }
 
-const Navbar = ({ imgSrc, children }: NavbarProps) => {
+const Navbar = ({ imgSrc, title, children }: NavbarProps) => {
   return (
     <div className="navBar">
       <div className="logotipotix">
         <div className="dashiconssuperhero">
-          <img
-            alt="Logotipo app"
-            className="vector"
-            src={imgSrc}
-          />
+          <img alt="Logotipo app" className="vector" src={imgSrc} />
         </div>
-        <p className="tix">TIX</p>
+        <p className="tix">{title}</p>
       </div>
       {children}
     </div>

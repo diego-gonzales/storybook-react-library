@@ -6,7 +6,7 @@ export interface NavbarItemProps {
 }
 
 const NavbarItem = ({ children }: NavbarItemProps) => {
-  return <a href="#">{children}</a>;
+  return <a href="#" className="navLinkItem">{children}</a>;
 };
 
 export default NavbarItem;
