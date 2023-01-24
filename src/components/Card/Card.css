@@ -1,0 +1,40 @@
+.cardSuperheroe {
+  background-color: rgba(231, 224, 235, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.imageCard {
+  flex: 1;
+  align-self: stretch;
+  object-fit: cover;
+}
+
+.content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.tituloSuperheroe {
+  font-family: "Inter";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  color: rgba(0, 0, 0, 1);
+  align-self: stretch;
+  margin-bottom: 20px;
+}
+
+.descripcion {
+  max-width: 347px;
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: rgba(0, 0, 0, 1);
+  margin-bottom: 20px;
+}
