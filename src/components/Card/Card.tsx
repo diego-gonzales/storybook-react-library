@@ -1,11 +1,11 @@
-import React, { ReactElement, ReactNode } from "react";
+import React, { ReactNode } from "react";
 import './Card.css'
 
 export interface CardProps {
   imgSrc: string;
   title: string;
   description: string;
-  children: ReactElement;
+  children: ReactNode;
 }
 
 const Card = ({ imgSrc, title, description, children }: CardProps) => {
