@@ -6,18 +6,7 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions",
-    {
-      "name": "storybook-css-modules",
-      "options": {
-        "cssModulesLoaderOptions": {
-          "importLoaders": 1,
-          "modules": {
-            "localIdentName": "[hash:base64:5]",
-          }
-        }
-      }
-    }
+    "@storybook/addon-interactions"
   ],
   "framework": "@storybook/react"
 }
