@@ -12,11 +12,11 @@ const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
   type: 'primary',
-  label: 'Primary'
+  children: 'Primary'
 };
 
 export const Secondary = Template.bind({});
 Secondary.args = {
   type: 'secondary',
-  label: 'Secondary'
+  children: 'Secondary'
 };

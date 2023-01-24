@@ -1,19 +1,16 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import "./Button.css";
 
 export interface ButtonProps {
-  label: string;
+  children: ReactNode;
   type: "primary" | "secondary";
 }
 
-const Button = ({ label, type = "primary" }: ButtonProps) => {
+const Button = ({ children, type = "primary" }: ButtonProps) => {
   return (
     <button className={`btn btn-${type}`}>
-      {label}
+      {children}
     </button>
-    // <div className="btn">
-    //   <p className="button">{label}</p>
-    // </div>
   );
 };
 

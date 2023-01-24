@@ -1,0 +1,46 @@
+.navBar {
+  background-color: var(--material-theme-sys-light-surface-tint);
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logotipotix {
+  margin-right: 41px;
+  display: flex;
+  align-items: center;
+}
+
+.dashiconssuperhero {
+  padding: 5.5px;
+  display: flex;
+  align-items: center;
+}
+
+.vector {
+  flex: 1;
+  align-self: stretch;
+  object-fit: cover;
+}
+
+.tix {
+  font-family: "Inter";
+  font-size: 32px;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--material-theme-white);
+  text-align: right;
+}
+
+.tusSuperheroes {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--material-theme-white);
+  text-align: right;
+}
+
+.tusSuperheroes:not(:last-of-type) {
+  margin-right: 41px;
+}
