@@ -8,7 +8,7 @@ export interface CardProps {
   children: ReactNode;
 }
 
-const Card = ({ imgSrc, title, description, children }: CardProps) => {
+export const Card = ({ imgSrc, title, description, children }: CardProps) => {
   return (
     <div className="cardSuperheroe">
       <img alt="Card image" className="imageCard" src={imgSrc} />
@@ -20,5 +20,3 @@ const Card = ({ imgSrc, title, description, children }: CardProps) => {
     </div>
   );
 };
-
-export default Card;

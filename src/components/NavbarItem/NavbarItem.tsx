@@ -5,8 +5,7 @@ export interface NavbarItemProps {
   children: ReactNode;
 }
 
-const NavbarItem = ({ children }: NavbarItemProps) => {
+export const NavbarItem = ({ children }: NavbarItemProps) => {
   return <a href="#" className="navLinkItem">{children}</a>;
 };
 
-export default NavbarItem;

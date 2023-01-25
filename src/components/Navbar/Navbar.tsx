@@ -7,7 +7,7 @@ export interface NavbarProps {
   children: ReactNode;
 }
 
-const Navbar = ({ imgSrc, title, children }: NavbarProps) => {
+export const Navbar = ({ imgSrc, title, children }: NavbarProps) => {
   return (
     <div className="navBar">
       <div className="logotipotix">
@@ -21,4 +21,3 @@ const Navbar = ({ imgSrc, title, children }: NavbarProps) => {
   );
 };
 
-export default Navbar;

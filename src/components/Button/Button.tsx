@@ -6,12 +6,10 @@ export interface ButtonProps {
   type: "primary" | "secondary";
 }
 
-const Button = ({ children, type = "primary" }: ButtonProps) => {
+export const Button = ({ children, type = "primary" }: ButtonProps) => {
   return (
     <button className={`btn btn-${type}`}>
       {children}
     </button>
   );
 };
-
-export default Button;
