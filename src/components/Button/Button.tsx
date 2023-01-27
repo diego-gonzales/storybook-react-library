@@ -3,19 +3,12 @@ import "./Button.css";
 
 export interface ButtonProps {
   /**
-   * This is the button content
-   */
-  children: ReactNode;
-  /**
-   * This is a custom description
+   * This is the button type
    */
   type: "primary" | "secondary";
+  children: ReactNode;
 }
 
 export const Button = ({ children, type = "primary" }: ButtonProps) => {
-  return (
-    <button className={`btn btn-${type}`}>
-      {children}
-    </button>
-  );
+  return <button className={`btn btn-${type}`}>{children}</button>;
 };

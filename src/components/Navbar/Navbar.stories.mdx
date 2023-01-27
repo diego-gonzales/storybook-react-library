@@ -1,0 +1,49 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs';
+import { Navbar } from './Navbar';
+import { NavbarItem } from '../NavbarItem/NavbarItem';
+
+<Meta
+  title="Components/Navbar"
+  component={Navbar}
+  argTypes={{
+    children: {
+      control: false
+    }
+  }}
+/>
+
+export const Template = (args) => <Navbar {...args} />;
+
+
+# Navbar
+
+## Imports
+
+```
+import { Navbar, NavbarItem } from "my-react-libary-sb";
+```
+
+### Usage
+
+<Canvas withSource="open">
+  <Story
+    name="Default"
+    args={{
+      imgSrc: "https://static.overlay-tech.com/assets/f11dfcc7-75cf-45bf-96d1-233849a91b36.svg",
+      title: "TIX",
+      children: [<NavbarItem key={1}>Item 1</NavbarItem>, <NavbarItem key={2}>Item 2</NavbarItem>]
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Props
+
+### Navbar
+
+<ArgsTable of={Navbar} />
+
+### NavbarItem
+
+<ArgsTable of={NavbarItem} />

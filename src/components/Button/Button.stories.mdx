@@ -16,6 +16,29 @@ import { Button } from "my-react-libary-sb";
 
 Use the `type` prop to change the visual style of the `Button`. You can set the value to `primary` or `secondary`.
 
+<Canvas withSource="open">
+  <Story 
+    name="Primary"
+    args={{
+      type: 'primary',
+      children: 'Primary' 
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story 
+    name="Secondary" 
+    args={{
+      type: 'secondary', 
+      children: 'Secondary' 
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+## Props
+
+<ArgsTable of={Button} />
+
 {/* <Canvas withSource="open">
   <Story
     name="Types"
@@ -43,26 +66,3 @@ Use the `type` prop to change the visual style of the `Button`. You can set the 
     </div>
   </Story>
 </Canvas> */}
-
-<Canvas withSource="open">
-  <Story 
-    name="Primary"
-    args={{
-      type: 'primary',
-      children: 'Primary' 
-    }}>
-    {Template.bind({})}
-  </Story>
-  <Story 
-    name="Secondary" 
-    args={{
-      type: 'secondary', 
-      children: 'Secondary' 
-    }}>
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-## Props
-
-<ArgsTable of={Button} />
