@@ -5,7 +5,14 @@ import { Button } from "../Button/Button";
 
 export default {
   title: "Components/Card",
-  component: Card
+  component: Card,
+  argTypes: {
+    children: {
+      table: {
+        disable: true,
+      }
+    }
+  }
 } as ComponentMeta<typeof Card>;
 
 const Template: ComponentStory<typeof Card> = (args) => <Card {...args} />

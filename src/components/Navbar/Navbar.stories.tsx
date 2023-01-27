@@ -5,7 +5,14 @@ import { Navbar } from "./Navbar";
 
 export default {
   title: "Components/Navbar",
-  component: Navbar
+  component: Navbar,
+  argTypes: {
+    children: {
+      table: {
+        disable: true,
+      }
+    }
+  }
 } as ComponentMeta<typeof Navbar>;
 
 const Template: ComponentStory<typeof Navbar> = (args) => <Navbar {...args} />;
