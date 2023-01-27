@@ -8,9 +8,10 @@ export default {
   component: Card,
   argTypes: {
     children: {
-      table: {
-        disable: true,
-      }
+      control: false,
+      // table: {
+      //   disable: true,
+      // }
     }
   }
 } as ComponentMeta<typeof Card>;

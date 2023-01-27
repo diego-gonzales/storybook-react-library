@@ -1,0 +1,43 @@
+import { ArgsTable, Canvas, Meta, Story } from '@storybook/addon-docs';
+import { Card } from './Card';
+import { Button } from '../Button/Button';
+
+<Meta
+  title="Components/Card"
+  component={Card}
+  argTypes={{
+    children: {
+      control: false
+    }
+  }}
+/>
+
+export const Template = (args) => <Card {...args} />;
+
+# Card
+
+## Imports
+
+```
+import { Card } from "my-react-libary-sb";
+```
+
+### Usage
+
+<Canvas withSource="open">
+  <Story
+    name="Default"
+    args={{
+      imgSrc: "https://static.overlay-tech.com/assets/ebef6707-1b9a-4b2b-902b-5495631db30c.png",
+      title: "Superman",
+      description: "Es un superheroe ficticio que aparecio por primera vez en los comics estadounidenses publicados por DC Comics.",
+      children: <Button type="primary">Hello World</Button>
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+### Props
+
+<ArgsTable of={Card} />
