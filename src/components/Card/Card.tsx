@@ -6,6 +6,8 @@ export interface CardProps {
   title: string;
   description: string;
   children: ReactNode;
+  // propertyA?: 'primary' | 'secondary';
+  // propertyB?: string;
 }
 
 export const Card = ({ imgSrc, title, description, children }: CardProps) => {
