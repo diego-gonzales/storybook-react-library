@@ -1,4 +1,4 @@
-import React, { ReactElement, ReactNode } from "react";
+import React, { Children, cloneElement, ReactElement, ReactNode } from "react";
 import "./Navbar.css";
 
 export interface NavbarProps {
@@ -8,6 +8,11 @@ export interface NavbarProps {
 }
 
 export const Navbar = ({ imgSrc, title, children }: NavbarProps) => {
+
+  // const childrenArray = Children.toArray(children).map(child =>
+  //   cloneElement(child as ReactElement)
+  // );
+
   return (
     <div className="navBar">
       <div className="logotipotix">
