@@ -5,10 +5,12 @@ export interface ButtonProps {
   /**
    * This is the button type
    */
-  type: "primary" | "secondary";
+  type?: "primary" | "secondary";
   children: ReactNode;
 }
 
-export const Button = ({ children, type = "primary" }: ButtonProps) => {
-  return <button className={`btn btn-${type}`}>{children}</button>;
+export const Button = ({ children, type }: ButtonProps) => {
+  const typeClass = type ? `btn-${type}` : "";
+
+  return <button className={`btn ${typeClass}`}>{children}</button>;
 };
