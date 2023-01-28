@@ -1,11 +1,11 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import { Card } from "./Card";
+import { Card as CardComponent } from './Card';
 import { Button } from "../Button/Button";
 
 export default {
   title: "Components/Card",
-  component: Card,
+  component: CardComponent,
   argTypes: {
     children: {
       control: false,
@@ -14,12 +14,12 @@ export default {
       // }
     }
   }
-} as ComponentMeta<typeof Card>;
+} as ComponentMeta<typeof CardComponent>;
 
-const Template: ComponentStory<typeof Card> = (args) => <Card {...args} />;
+const Template: ComponentStory<typeof CardComponent> = (args) => <CardComponent {...args} />;
 
-export const Default = Template.bind({});
-Default.args = {
+export const Card = Template.bind({});
+Card.args = {
   imgSrc:
     "https://static.overlay-tech.com/assets/ebef6707-1b9a-4b2b-902b-5495631db30c.png",
   title: "Superman",
