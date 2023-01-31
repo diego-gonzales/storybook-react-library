@@ -4,7 +4,7 @@
 - React components.
 - Typescript.
 - Rollup to create the library.
-- Test for design tokens made in figma.
+- Figma tokens, design tokens made in figma.
 
 ### References:
 - [Reference 1](https://prateeksurana.me/blog/react-component-library-using-storybook-6/)
