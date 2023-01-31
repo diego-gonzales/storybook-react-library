@@ -1,6 +1,6 @@
 {
   "name": "my-react-library-sb",
-  "version": "1.0.9",
+  "version": "1.0.13",
   "description": "",
   "main": "lib/index.js",
   "module": "lib/index.es.js",
