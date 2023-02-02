@@ -8,7 +8,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "transformer": "token-transformer tokens.json tokens/input.json --expandShadow=true --expandTypography=true",
+    "transformer": "token-transformer tokens.json tokens/input.json --expandShadow=true --expandTypography=true --expandComposition=true",
     "dictionary": "style-dictionary build --config config.json",
     "build-lib": "rollup -c"
   },
