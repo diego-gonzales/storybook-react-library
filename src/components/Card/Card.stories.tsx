@@ -29,7 +29,11 @@ Card.args = {
 };
 
 
-
+// export const StoryWithLocale = (args: any, { globals }: any) => {
+//   const localeActual = globals;
+//   console.log(localeActual);
+//   return <>{'je'}</>;
+// };
 
 // Dealing with complex values: https://storybook.js.org/docs/react/essentials/controls
 /*
