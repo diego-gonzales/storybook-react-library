@@ -6,8 +6,8 @@ export const ThemeIcon = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <button className="theme-button">
-      <span className="theme-icon" onClick={toggleTheme}>
+    <button className="theme-button" onClick={toggleTheme}>
+      <span className="theme-icon">
         {theme === "light" ? (
           <svg
             width="24"
