@@ -2,6 +2,7 @@ import { MINIMAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { CUSTOM_VIEWPORTS } from '../utils/viewports';
 import '../src/css/variables.css';
 import '../src/index.css';
+import { ThemeProvider } from '../src/contexts/ThemeContext'
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -21,19 +22,26 @@ export const parameters = {
 }
 
 // export const globalTypes = {
-//   locale: {
-//     name: 'Locale',
-//     description: 'Internationalization locale',
-//     defaultValue: 'en',
+//   theme: {
+//     name: 'Theme',
+//     description: 'Global theme for components',
+//     defaultValue: 'light',
 //     toolbar: {
-//       icon: 'globe',
-//       items: [
-//         { value: 'en', right: '🇺🇸', title: 'English' },
-//         { value: 'fr', right: '🇫🇷', title: 'Français' },
-//         { value: 'es', right: '🇪🇸', title: 'Español' },
-//         { value: 'zh', right: '🇨🇳', title: '中文' },
-//         { value: 'kr', right: '🇰🇷', title: '한국어' },
-//       ],
+//       icon: 'circlehollow',
+//       items: ['light', 'dark'],
+//       dynamicTitle: true,
 //     },
 //   },
 // };
+
+const withThemeProvider = (Story, context) => {
+  // const theme = context.globals.theme;
+  // console.log(theme);
+  return (
+    <ThemeProvider>
+      <Story />
+    </ThemeProvider>
+  )
+}
+
+export const decorators = [withThemeProvider];

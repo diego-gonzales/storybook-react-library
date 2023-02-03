@@ -16,13 +16,13 @@ export default {
       handles: ["click"]
     }
   },
-  decorators: [
-    (Story) => (
-      <ThemeProvider>
-        <Story />
-      </ThemeProvider>
-    )
-  ]
+  // decorators: [
+  //   (Story) => (
+  //     <ThemeProvider>
+  //       <Story />
+  //     </ThemeProvider>
+  //   )
+  // ]
 } as ComponentMeta<typeof ThemeIconComponent>;
 
 
@@ -33,7 +33,7 @@ ThemeIcon.parameters = {
   docs: {
     source: {
       code: '<ThemeIcon />',
-      language: "js",
+      language: "jsx",
       type: "auto"
     }
   }

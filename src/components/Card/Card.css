@@ -39,3 +39,15 @@
   color: rgba(0, 0, 0, 1);
   margin-bottom: 20px;
 }
+
+.cardSuperheroDark {
+  background-color: var(--material-theme-ref-neutral-neutral50);
+}
+
+.tituloSuperheroeDark {
+  color: #fff;
+}
+
+.descripcionDark {
+  color: #fff;
+}

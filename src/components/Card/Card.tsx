@@ -1,4 +1,5 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, useContext } from "react";
+import { ThemeContext } from "../../contexts/ThemeContext";
 import './Card.css'
 
 export interface CardProps {
@@ -11,12 +12,18 @@ export interface CardProps {
 }
 
 export const Card = ({ imgSrc, title, description, children }: CardProps) => {
+  const { theme } = useContext(ThemeContext);
+
+  const classCardSuperheroeDark = theme === 'dark' ? 'cardSuperheroDark' : '';
+  const classTituloSuperheroeDark = theme === 'dark' ? 'tituloSuperheroeDark' : '';
+  const classDescripcionDark = theme === 'dark' ? 'descripcionDark' : '';
+
   return (
-    <div className="cardSuperheroe">
+    <div className={`cardSuperheroe ${classCardSuperheroeDark}`}>
       <img alt="Card image" className="imageCard" src={imgSrc} />
       <div className="content">
-        <p className="tituloSuperheroe">{title}</p>
-        <p className="descripcion">{description}</p>
+        <p className={`tituloSuperheroe ${classTituloSuperheroeDark}`}>{title}</p>
+        <p className={`descripcion ${classDescripcionDark}`}>{description}</p>
         {children}
       </div>
     </div>
