@@ -1,4 +1,4 @@
-import { Story, Canvas, ArgsTable } from "@storybook/addon-docs";
+import { Story, Canvas, ArgsTable, Source } from "@storybook/addon-docs";
 import { ThemeIcon } from './ThemeIcon';
 
 # ThemeIcon
@@ -13,25 +13,21 @@ import { ThemeIcon, ThemeProvider } from "my-react-libary-sb";
 `ThemeIcon` es un componente creado para cambiar entre tema `light` y `dark` nuestra aplicación. Lo podrías colocar en cualquier lugar de tu aplicación.
 
 <Canvas withSource="open">
-  <Story id="components-themeicon--default" />
+  <Story id="components-themeicon--theme-icon" />
 </Canvas>
 
 Pero que este funcione no solo se necesita importar el componente, sino que también se necesita del `ThemeProvider`, el cual debe envolver por ejemplo al componente de entrada de nuestra aplicación.
 
-<div
-  style={{
-    background: "rgba(0, 0, 0, 0.85)",
-    padding: '10px',
-    color: 'white',
-    margin: '30px 0px'
-  }}
->
-  ```
+<Source
+  language='js'
+  dark
+  format={true}
+  code={`
     <ThemeProvider>
       <App />
-    </ThemeProvider>
-  ```
-</div>
+    </ThemeProvider>`
+  }
+/>
 
 De esta manera ya el `ThemeIcon` component podrá usar de manera interna el `ThemeContext` y poder cambiar el tema de nuestra aplicación.
 
