@@ -6,3 +6,4 @@ tokens/
 config.json
 rollup.config.js
 tokens.json
+tsconfig.json
