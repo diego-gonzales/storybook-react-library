@@ -14,16 +14,12 @@ export interface CardProps {
 export const Card = ({ imgSrc, title, description, children }: CardProps) => {
   const { theme } = useContext(ThemeContext);
 
-  const classCardSuperheroeDark = theme === 'dark' ? 'cardSuperheroDark' : '';
-  const classTituloSuperheroeDark = theme === 'dark' ? 'tituloSuperheroeDark' : '';
-  const classDescripcionDark = theme === 'dark' ? 'descripcionDark' : '';
-
   return (
-    <div className={`cardSuperheroe ${classCardSuperheroeDark}`}>
+    <div className={`cardSuperheroe-${theme}`}>
       <img alt="Card image" className="imageCard" src={imgSrc} />
       <div className="content">
-        <p className={`tituloSuperheroe ${classTituloSuperheroeDark}`}>{title}</p>
-        <p className={`descripcion ${classDescripcionDark}`}>{description}</p>
+        <p className={`tituloSuperheroe-${theme}`}>{title}</p>
+        <p className={`descripcion-${theme}`}>{description}</p>
         {children}
       </div>
     </div>
